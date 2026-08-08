@@ -98,6 +98,32 @@ p  { margin: 0 0 1.1rem; }
 .nav-links a:hover { text-decoration: none; border-color: var(--brass); }
 .nav-links a[aria-current="page"] { border-color: var(--brass); }
 
+/* ---------- dropdown (Resources) ---------- */
+.dropdown { position: relative; }
+.dropdown-toggle {
+  font-family: "Inter", sans-serif; background: none; border: 0; cursor: pointer;
+  color: var(--green); font-size: .93rem; font-weight: 500;
+  padding: 0 0 2px; display: inline-flex; align-items: center; gap: .35rem;
+  border-bottom: 2px solid transparent;
+}
+.dropdown-toggle:hover { border-color: var(--brass); }
+.dropdown-toggle.is-active { border-color: var(--brass); }
+.dropdown-toggle .caret { font-size: .65rem; transition: transform .18s ease; }
+.dropdown-toggle[aria-expanded="true"] .caret { transform: rotate(180deg); }
+.dropdown-menu {
+  position: absolute; top: calc(100% + .8rem); left: 0; min-width: 190px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: .5rem; display: grid; gap: .1rem; z-index: 60;
+  box-shadow: 0 14px 34px rgba(30, 58, 47, .14);
+}
+.dropdown-menu[hidden] { display: none; }
+.dropdown-menu a {
+  color: var(--green); font-size: .9rem; font-weight: 500;
+  padding: .55rem .7rem; border-radius: 8px; border-bottom: 0;
+}
+.dropdown-menu a:hover { background: var(--cream); border-color: transparent; text-decoration: none; }
+.dropdown-menu a[aria-current="page"] { color: var(--brass-dark); background: var(--cream); border-color: transparent; }
+
 /* ---------- buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; gap: .5rem;
