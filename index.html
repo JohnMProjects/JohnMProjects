@@ -40,7 +40,14 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
         <a href="about.html">About</a>
-        <a href="case-studies.html">Case Studies</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="resources-menu">Resources <span class="caret" aria-hidden="true">&#9662;</span></button>
+          <div class="dropdown-menu" id="resources-menu" role="menu" hidden>
+            <a href="resources.html" role="menuitem">Overview</a>
+            <a href="blog.html" role="menuitem">Blog</a>
+            <a href="case-studies.html" role="menuitem">Case Studies</a>
+          </div>
+        </div>
         <a href="portfolio.html">Portfolio</a>
       </nav>
     </div>
@@ -165,5 +172,6 @@
     </div>
   </footer>
 
+  <script src="nav.js"></script>
 </body>
 </html>
