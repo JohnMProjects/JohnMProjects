@@ -223,6 +223,38 @@ p  { margin: 0 0 1.1rem; }
   padding: .32rem .7rem; margin-top: .9rem;
 }
 
+/* case study page */
+.cs-meta { color: var(--muted); font-size: .9rem; margin-top: .5rem; }
+.cs-tiles {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 2.25rem 0;
+}
+.cs-tile {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; padding: 1.1rem 1.2rem;
+}
+.cs-tile .lbl {
+  font-size: .72rem; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--brass-dark); margin-bottom: .5rem;
+}
+.cs-tile .val { font-family: "Fraunces", serif; color: var(--green); font-size: 1.7rem; font-weight: 500; line-height: 1; }
+.cs-tile .sub { font-size: .8rem; color: var(--muted); margin-top: .35rem; }
+.cs-chart {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 14px; padding: 1.4rem 1.5rem; margin: 1.75rem 0 2.25rem;
+}
+.cs-chart .cap {
+  font-size: .75rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--brass-dark); margin-bottom: 1rem;
+}
+.cs-body { max-width: 64ch; }
+.cs-body h2 { font-size: 1.4rem; margin-top: 1.75rem; }
+.card-link {
+  margin-top: 1.1rem; font-size: .9rem; font-weight: 500; color: var(--brass-dark);
+  display: inline-flex; align-items: center; gap: .4rem;
+}
+.card-link .arrow { transition: transform .18s ease; }
+.card:hover .card-link .arrow { transform: translateX(3px); }
+
 /* case-study list rows */
 .post {
   display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: start;
@@ -271,6 +303,7 @@ p  { margin: 0 0 1.1rem; }
   .post { grid-template-columns: 1fr; }
   .post .hl { text-align: left; }
   .impact { gap: 1.75rem; }
+  .cs-tiles { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* phones: stack the nav, scale the type, center the dropdown */
