@@ -209,6 +209,19 @@ p  { margin: 0 0 1.1rem; }
 .metrics .rv .a { color: var(--muted); }
 .metrics .rv .s { color: var(--brass); margin: 0 .3rem; }
 .metrics .rv .b { color: var(--green); font-weight: 500; font-size: 1.15rem; }
+.metrics .rv .sm { color: var(--muted); font-size: .82rem; margin-left: .35rem; font-family: "Inter", sans-serif; }
+
+/* portfolio Solo / Team sections */
+.portfolio-section { margin-top: clamp(2.75rem, 6vw, 4.5rem); }
+.portfolio-section > h2 { margin-bottom: .4rem; }
+.portfolio-section .sect-intro { color: var(--muted); max-width: 60ch; margin: 0 0 2rem; }
+.role-tag {
+  display: inline-block; font-family: "Inter", sans-serif; font-size: .7rem;
+  font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--brass-dark); background: var(--cream);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: .32rem .7rem; margin-top: .9rem;
+}
 
 /* case-study list rows */
 .post {
