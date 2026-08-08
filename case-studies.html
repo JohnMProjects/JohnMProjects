@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies — John Joshua Masajo</title>
-  <meta name="description" content="Off-page SEO case studies and write-ups: link building campaigns, directory strategy, and referring-domain growth." />
+  <meta name="description" content="Project-based off-page SEO case studies: what I noticed in the data, what I did about it, and the results that followed." />
   <meta property="og:title" content="Case Studies — John Joshua Masajo" />
   <meta property="og:type" content="website" />
 
@@ -21,7 +21,14 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="case-studies.html" aria-current="page">Case Studies</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle is-active" aria-expanded="false" aria-haspopup="true" aria-controls="resources-menu">Resources <span class="caret" aria-hidden="true">&#9662;</span></button>
+          <div class="dropdown-menu" id="resources-menu" role="menu" hidden>
+            <a href="resources.html" role="menuitem">Overview</a>
+            <a href="blog.html" role="menuitem">Blog</a>
+            <a href="case-studies.html" role="menuitem" aria-current="page">Case Studies</a>
+          </div>
+        </div>
         <a href="portfolio.html">Portfolio</a>
       </nav>
     </div>
@@ -30,47 +37,54 @@
   <main>
     <section class="section">
       <div class="wrap">
-        <p class="eyebrow">Case Studies &amp; Notes</p>
-        <h1>How the results actually happened.</h1>
+        <p class="eyebrow">Resources · Case Studies</p>
+        <h1>What I noticed, and what I did.</h1>
         <p class="lead" style="margin-top:1.25rem;">
-          Deeper write-ups of the link-building and off-page campaigns behind the numbers —
-          the strategy, the workflow, and what moved.
+          Write-ups from real projects — the signal I spotted in the backlink data,
+          the off-page move I made because of it, and how it played out. Proof of
+          thinking, not just numbers.
         </p>
 
-        <!-- EDIT: each row is one case study / post. Duplicate a block to add more,
-             and link the title to a real page when you write it. -->
+        <!-- EDIT: each row is one case study. Duplicate a block to add more,
+             and link the title to a full write-up page when you publish it. -->
         <div style="margin-top:2.5rem;">
 
           <article class="post">
             <div>
-              <p class="meta">Case Study · Outsourcing</p>
-              <h3><a href="#">Growing referring domains 3× in six months for a BPO client</a></h3>
-              <p style="color:var(--muted);">The prospecting mix, the outreach cadence, and how directory
-                 clean-up compounded the gains from editorial links.</p>
+              <p class="meta">Case Study &middot; Outsourcing</p>
+              <h3><a href="#">Spotting a toxic link pattern before it tanked a BPO client's rankings</a></h3>
+              <p style="color:var(--muted);">A sudden spike in low-quality referring domains looked like growth
+                 on the surface. Here's what tipped me off, how I confirmed it, and the disavow-and-rebuild plan
+                 that protected the profile.</p>
             </div>
-            <div class="hl">68 → 210 <small>Referring domains</small></div>
+            <div class="hl">-140 <small>Toxic domains removed</small></div>
           </article>
 
           <article class="post">
             <div>
-              <p class="meta">Workflow · Directories</p>
-              <h3><a href="#">Directory link building at scale: a 1,000-domain prospecting system</a></h3>
-              <p style="color:var(--muted);">How I filter thousands of candidate directories down to the
-                 few hundred worth submitting to — without wasting weeks.</p>
+              <p class="meta">Case Study &middot; AI Staffing</p>
+              <h3><a href="#">How referring-domain velocity predicted a ranking jump</a></h3>
+              <p style="color:var(--muted);">The rankings hadn't moved yet, but the link-acquisition curve
+                 was telling a different story. What I watched, and why I doubled down on editorial outreach
+                 right before the climb.</p>
             </div>
-            <div class="hl">1,000+ <small>Domains vetted</small></div>
+            <div class="hl">9 &rarr; 24 <small>Authority Score</small></div>
           </article>
 
           <article class="post">
             <div>
-              <p class="meta">Case Study · AI Staffing</p>
-              <h3><a href="#">Editorial link acquisition: turning linkable assets into authority</a></h3>
-              <p style="color:var(--muted);">Building authority in a brand-new niche using data-rich
-                 assets that publications actually wanted to link to.</p>
+              <p class="meta">Case Study &middot; SaaS</p>
+              <h3><a href="#">Turning one data asset into 40 editorial links</a></h3>
+              <p style="color:var(--muted);">A single well-framed statistic did more for the backlink profile
+                 than months of cold outreach. How I found the angle publications actually wanted to cite.</p>
             </div>
-            <div class="hl">9 → 24 <small>Authority Score</small></div>
+            <div class="hl">40+ <small>Editorial links earned</small></div>
           </article>
 
+        </div>
+
+        <div class="cta-row" style="margin-top:2.5rem;">
+          <a class="btn btn--ghost" href="blog.html">Read the blog <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -85,10 +99,12 @@
       <div class="foot-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
         <a href="portfolio.html">Portfolio</a>
       </div>
     </div>
   </footer>
 
+  <script src="nav.js"></script>
 </body>
 </html>
