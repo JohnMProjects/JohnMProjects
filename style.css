@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
 /* =========================================================
-   John Joshua Masajo — Off-Page SEO Specialist
+   John Joshua Masajo - Off-Page SEO Specialist
    Theme: Forest & Cream
    One shared stylesheet for all pages.
    ========================================================= */
@@ -37,7 +38,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- typography ---------- */
 h1, h2, h3 {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   color: var(--green);
   font-weight: 500;
   line-height: 1.12;
@@ -79,7 +80,7 @@ p  { margin: 0 0 1.1rem; }
 }
 .brand {
   display: inline-flex; align-items: center; gap: .6rem;
-  font-family: "Fraunces", serif; font-weight: 600;
+  font-family: "Lora", serif; font-weight: 600;
   color: var(--green); font-size: 1.05rem; letter-spacing: -0.01em;
 }
 .brand:hover { text-decoration: none; }
@@ -87,7 +88,7 @@ p  { margin: 0 0 1.1rem; }
   width: 34px; height: 34px; border-radius: 50%;
   display: grid; place-items: center;
   background: var(--green); color: var(--cream);
-  font-family: "Fraunces", serif; font-size: .82rem; font-weight: 500;
+  font-family: "Lora", serif; font-size: .82rem; font-weight: 500;
   letter-spacing: 0.02em;
 }
 .nav-links { display: flex; align-items: center; gap: clamp(.9rem, 2.5vw, 2rem); flex-wrap: wrap; }
@@ -150,7 +151,7 @@ p  { margin: 0 0 1.1rem; }
 /* ---------- metric signature (the recurring device) ---------- */
 .metric {
   display: flex; align-items: baseline; gap: .55rem;
-  font-family: "Fraunces", serif;
+  font-family: "Lora", serif;
 }
 .metric .from { color: var(--muted); font-size: 1.05rem; }
 .metric .to   { color: var(--green); font-size: 1.75rem; font-weight: 500; }
@@ -169,7 +170,7 @@ p  { margin: 0 0 1.1rem; }
   padding-block: 2rem;
 }
 .impact .stat .num {
-  font-family: "Fraunces", serif; color: var(--green);
+  font-family: "Lora", serif; color: var(--green);
   font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 500; line-height: 1;
 }
 .impact .stat .cap { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
@@ -205,7 +206,7 @@ p  { margin: 0 0 1.1rem; }
   font-size: .8rem; font-weight: 600; letter-spacing: 0.06em;
   text-transform: uppercase; color: var(--muted);
 }
-.metrics .rv { font-family: "Fraunces", serif; white-space: nowrap; }
+.metrics .rv { font-family: "Lora", serif; white-space: nowrap; }
 .metrics .rv .a { color: var(--muted); }
 .metrics .rv .s { color: var(--brass); margin: 0 .3rem; }
 .metrics .rv .b { color: var(--green); font-weight: 500; font-size: 1.15rem; }
@@ -236,7 +237,7 @@ p  { margin: 0 0 1.1rem; }
   font-size: .72rem; font-weight: 600; letter-spacing: 0.06em;
   text-transform: uppercase; color: var(--brass-dark); margin-bottom: .5rem;
 }
-.cs-tile .val { font-family: "Fraunces", serif; color: var(--green); font-size: 1.7rem; font-weight: 500; line-height: 1; }
+.cs-tile .val { font-family: "Lora", serif; color: var(--green); font-size: 1.7rem; font-weight: 500; line-height: 1; }
 .cs-tile .sub { font-size: .8rem; color: var(--muted); margin-top: .35rem; }
 .cs-chart {
   background: var(--card); border: 1px solid var(--line);
@@ -266,7 +267,7 @@ p  { margin: 0 0 1.1rem; }
 .post .meta { color: var(--muted); font-size: .85rem; margin-bottom: .4rem;
   letter-spacing: 0.04em; text-transform: uppercase; font-weight: 600; }
 .post .hl {
-  text-align: right; font-family: "Fraunces", serif; color: var(--green);
+  text-align: right; font-family: "Lora", serif; color: var(--green);
   font-size: 1.3rem; font-weight: 500; white-space: nowrap;
 }
 .post .hl small { display: block; font-family: "Inter", sans-serif;
@@ -277,7 +278,7 @@ p  { margin: 0 0 1.1rem; }
 .two-col { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
 .taglist { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
 .taglist li { display: flex; gap: .6rem; align-items: baseline; color: var(--muted); }
-.taglist li::before { content: "—"; color: var(--brass); }
+.taglist li::before { content: "\00B7"; color: var(--brass); }
 .panel {
   background: var(--card); border: 1px solid var(--line);
   border-radius: 14px; padding: 1.6rem;
