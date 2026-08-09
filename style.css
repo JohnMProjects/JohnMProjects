@@ -59,7 +59,7 @@ p  { margin: 0 0 1.1rem; }
   color: var(--brass-dark);
   margin: 0 0 1rem;
 }
-.lead { font-size: 1.18rem; color: var(--muted); max-width: 60ch; }
+.lead { font-size: 1.18rem; color: var(--muted); max-width: 74ch; }
 
 /* ---------- layout helpers ---------- */
 .wrap { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--gutter); }
@@ -215,7 +215,7 @@ p  { margin: 0 0 1.1rem; }
 /* portfolio Solo / Team sections */
 .portfolio-section { margin-top: clamp(2.75rem, 6vw, 4.5rem); }
 .portfolio-section > h2 { margin-bottom: .4rem; }
-.portfolio-section .sect-intro { color: var(--muted); max-width: 60ch; margin: 0 0 2rem; }
+.portfolio-section .sect-intro { color: var(--muted); max-width: 74ch; margin: 0 0 2rem; }
 .role-tag {
   display: inline-block; font-family: "Inter", sans-serif; font-size: .7rem;
   font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
@@ -247,7 +247,7 @@ p  { margin: 0 0 1.1rem; }
   font-size: .75rem; font-weight: 600; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--brass-dark); margin-bottom: 1rem;
 }
-.cs-body { max-width: 64ch; }
+.cs-body { max-width: 78ch; }
 .cs-body h2 { font-size: 1.4rem; margin-top: 1.75rem; }
 .card-link {
   margin-top: 1.1rem; font-size: .9rem; font-weight: 500; color: var(--brass-dark);
