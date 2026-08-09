@@ -104,9 +104,9 @@
           <h2>Site 1: Established flagship (UK)</h2>
           <p class="sect-intro">The older, higher-authority domain, already holding the category's money terms when the engagement began.</p>
           <div class="cs-chart">
-            <div class="cap">Estimated organic traffic &middot; recorded readings</div>
+            <div class="cap">Estimated organic traffic &middot; monthly</div>
             <div style="position:relative; height:280px;">
-              <canvas id="chart-flagship" role="img" aria-label="Flagship traffic: 6,946 per month at the March start, a 10,442 October peak, and 8,315 by November.">Flagship traffic rose from 6,946 at the March start to a 10,442 October peak, closing at 8,315 in November.</canvas>
+              <canvas id="chart-flagship" role="img" aria-label="Flagship monthly organic traffic, March to November 2025: from about 6,900 through a June rise and July dip, climbing to a 10,442 October peak and settling at 8,315 in November.">Flagship monthly organic traffic climbed from about 6,900 in March to a 10,442 October peak, settling at 8,315 in November.</canvas>
             </div>
           </div>
           <p><strong style="color:var(--green); font-weight:500;">Traffic +20%</strong> (6,946 to 8,315/mo,
@@ -246,16 +246,16 @@
     if (flagship) new Chart(flagship, {
       type: 'line',
       data: {
-        labels: ["Mar 2025", "Oct 2025", "Nov 2025"],
+        labels: months,
         datasets: [{
           label: 'Organic traffic',
-          data: [6946, 10442, 8315],
+          data: [6946, 6878, 6973, 8365, 7508, 8255, 8745, 10442, 8315],
           borderColor: '#1E3A2F',
           backgroundColor: 'rgba(30,58,47,0.08)',
           borderWidth: 2.5,
           fill: true,
           tension: 0.25,
-          pointRadius: 4,
+          pointRadius: 3,
           pointHoverRadius: 6,
           pointBackgroundColor: '#1E3A2F',
           pointHoverBackgroundColor: '#A8935F',
@@ -274,7 +274,8 @@
             titleFont: { size: 12 },
             bodyFont: { size: 13 },
             callbacks: {
-              label: function (item) { return item.formattedValue + ' visits/mo'; }
+              title: function (items) { return items[0].label + ' 2025'; },
+              label: function (item) { return item.formattedValue + ' visits'; }
             }
           }
         },
