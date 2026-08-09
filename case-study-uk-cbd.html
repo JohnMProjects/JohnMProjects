@@ -10,7 +10,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -60,7 +60,7 @@
           <div class="cs-tile">
             <div class="lbl">Link vetting</div>
             <div class="val">DR 20+</div>
-            <div class="sub">Ahrefs floor, this engagement</div>
+            <div class="sub">client-required floor</div>
           </div>
           <div class="cs-tile">
             <div class="lbl">Flagship authority</div>
@@ -82,9 +82,9 @@
           <h2>What I did</h2>
           <p>I owned link building across both sites, earning referring domains through relevant editorial
              and niche placements, curated directory and citation listings, and HARO-style expert-insight and
-             roundup contributions. Prospecting was relevance-first and vetted to a minimum Domain Rating of
-             15 in Ahrefs, with priority given to cannabis, CBD, and vape community sites plus genuine
-             lifestyle editorial rather than generic volume.</p>
+             roundup contributions. Prospecting was relevance-first and vetted to the client's required Domain
+             Rating floor of DR 20+ in Ahrefs, with priority given to cannabis, CBD, and vape community sites
+             plus genuine lifestyle editorial rather than generic volume.</p>
           <p>I also wrote the content briefs. For each page that needed to hold or gain a position, I set the
              target topic and working title, the meta title and description, the keyword focus, and the
              internal linking structure, so the authority I built landed on the commercial pages positioned
@@ -96,19 +96,25 @@
              the contract is claimed. Because the two sites are sister properties, I stripped out every link
              they made to each other, in both directions, and deduplicated referring domains across the two,
              so a directory listing both counts once. Search-engine and automatically generated links were
-             set aside rather than presented as outreach, and every link I acquired was vetted against Ahrefs
-             Domain Rating, held to a DR 20+ floor on this engagement.</p>
+             set aside rather than presented as outreach, and every link acquired during the engagement was
+             vetted against the client's required Domain Rating floor of DR 20+, with none falling below it.</p>
         </div>
 
         <div class="portfolio-section">
           <h2>Site 1: Established flagship (UK)</h2>
           <p class="sect-intro">The older, higher-authority domain, already holding the category's money terms when the engagement began.</p>
+          <div class="cs-chart">
+            <div class="cap">Estimated organic traffic &middot; recorded readings</div>
+            <div style="position:relative; height:280px;">
+              <canvas id="chart-flagship" role="img" aria-label="Flagship traffic: 6,946 per month at the March start, a 10,442 October peak, and 8,315 by November.">Flagship traffic rose from 6,946 at the March start to a 10,442 October peak, closing at 8,315 in November.</canvas>
+            </div>
+          </div>
           <p><strong style="color:var(--green); font-weight:500;">Traffic +20%</strong> (6,946 to 8,315/mo,
-             October peak 10,442) &middot; DR ~38 to ~41 &middot; new referring domains vetted against Ahrefs
-             DR 20+ &middot; core commercial terms held top-3 throughout. A small set of head terms carried
-             roughly three-quarters of the site's organic traffic, which is what made holding those positions
-             the priority rather than chasing keyword count. Authority gains showed up modestly, since gains
-             above a Domain Rating of 30 are logarithmically harder to earn.</p>
+             October peak 10,442) &middot; DR ~38 to ~41 &middot; new referring domains vetted against the
+             client-required DR 20+ floor &middot; core commercial terms held top-3 throughout. A small set of
+             head terms carried roughly three-quarters of the site's organic traffic, which is what made
+             holding those positions the priority rather than chasing keyword count. Authority gains showed up
+             modestly, since gains above a Domain Rating of 30 are logarithmically harder to earn.</p>
           <p style="color:var(--muted); font-size:.95rem;">The unwon lane, stated plainly: vape-pen and
              CBD-oil terms did not reach the front page. They still sit mid-results on blog URLs rather than
              commercial pages, and closing that gap is the next off-page and content priority, not a solved
@@ -147,8 +153,8 @@
           <p style="color:var(--muted); font-size:.9rem; margin-top:1.5rem;">
              Client anonymized under NDA. Referring domains are deduplicated across the two sites and exclude
              the sites' links to each other. Search-engine and automatically generated links are set aside,
-             and every link acquired during the campaign was vetted against Ahrefs Domain Rating at a DR 20+
-             floor. Traffic figures are tool-estimated organic traffic; the Italian site's August peak is
+             and every link acquired during the engagement was vetted against the client's required Domain
+             Rating floor of DR 20+, with none falling below it. Traffic figures are tool-estimated organic traffic; the Italian site's August peak is
              shown in full rather than presented as a headline. Domain authority is Ahrefs DR, approximate,
              marked with a tilde, and treated as a supporting signal. I solely owned the link-building work,
              under the oversight of the assigning UK SEO consultant, and contributed on the on-page side
@@ -197,7 +203,7 @@
           borderWidth: 2.5,
           fill: true,
           tension: 0.25,
-          spanGaps: false,
+          spanGaps: true,
           pointRadius: 3,
           pointHoverRadius: 6,
           pointBackgroundColor: '#1E3A2F',
@@ -226,6 +232,56 @@
           y: {
             beginAtZero: true,
             ticks: { stepSize: 40, color: '#8A8479', font: { size: 11 }, callback: function (v) { return v.toLocaleString(); } },
+            grid: { color: '#DEDACE' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { color: '#8A8479', font: { size: 11 } }
+          }
+        }
+      }
+    });
+
+    var flagship = document.getElementById('chart-flagship');
+    if (flagship) new Chart(flagship, {
+      type: 'line',
+      data: {
+        labels: ["Mar 2025", "Oct 2025", "Nov 2025"],
+        datasets: [{
+          label: 'Organic traffic',
+          data: [6946, 10442, 8315],
+          borderColor: '#1E3A2F',
+          backgroundColor: 'rgba(30,58,47,0.08)',
+          borderWidth: 2.5,
+          fill: true,
+          tension: 0.25,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          pointBackgroundColor: '#1E3A2F',
+          pointHoverBackgroundColor: '#A8935F',
+          pointHoverBorderColor: '#A8935F'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#1E3A2F',
+            padding: 10,
+            titleFont: { size: 12 },
+            bodyFont: { size: 13 },
+            callbacks: {
+              label: function (item) { return item.formattedValue + ' visits/mo'; }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { stepSize: 2000, color: '#8A8479', font: { size: 11 }, callback: function (v) { return v.toLocaleString(); } },
             grid: { color: '#DEDACE' }
           },
           x: {
