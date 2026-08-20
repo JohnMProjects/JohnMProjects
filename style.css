@@ -378,3 +378,18 @@ main > .section:first-child { padding-top: clamp(1.75rem, 4vw, 2.75rem); }
 /* ---- nav wordmark beside the logo ---- */
 .brand-name { white-space: nowrap; }
 @media (max-width: 420px) { .brand-name { display: none; } }
+
+/* ---- footer tagline centers with the logo (sub-line removed) ---- */
+.foot-brand h2 { margin: 0; }
+
+/* ---- logo intro on every page load: rings draw/spin in, name writes itself ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .brand-mark { animation: mark-in .8s cubic-bezier(.2,.7,.2,1) both; transform-origin: center; }
+  .brand-mark circle:nth-of-type(1) { stroke-dasharray: 189; animation: ring-draw1 .8s ease both; }
+  .brand-mark circle:nth-of-type(2) { stroke-dasharray: 158; animation: ring-draw2 .8s ease .12s both; }
+  .brand-name { display: inline-block; white-space: nowrap; animation: name-write .55s ease .55s both; }
+  @keyframes mark-in { from { transform: rotate(-90deg); } to { transform: rotate(0); } }
+  @keyframes ring-draw1 { from { stroke-dashoffset: 189; } to { stroke-dashoffset: 0; } }
+  @keyframes ring-draw2 { from { stroke-dashoffset: 158; } to { stroke-dashoffset: 0; } }
+  @keyframes name-write { from { clip-path: inset(0 101% 0 0); } to { clip-path: inset(0 0 0 0); } }
+}
