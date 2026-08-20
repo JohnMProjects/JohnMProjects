@@ -358,3 +358,17 @@ p  { margin: 0 0 1.1rem; }
 .foot-logo { display: inline-flex; flex-shrink: 0; }
 .foot-brand h2 { font-size: 1.5rem; line-height: 1.12; }
 .foot-brand .muted { margin-top: .2rem; }
+
+/* ---- tools marquee (About) ---- */
+.tools-band { padding-top: clamp(2rem, 5vw, 3rem); }
+.marquee { overflow: hidden; border-block: 1px solid var(--line); background: var(--card); }
+.marquee-track { display: flex; align-items: center; width: max-content; animation: marquee-scroll 45s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-item { display: inline-flex; align-items: center; padding: 18px 0; font-family: "Inter", sans-serif;
+  font-size: .8rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.marquee-item::after { content: "\25C6"; color: var(--brass); margin: 0 2.25rem; font-size: .5rem; }
+@keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; padding: 8px 1rem; }
+  .marquee-dup { display: none; }
+}
