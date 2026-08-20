@@ -144,7 +144,7 @@ main > .section:first-child { padding-top: clamp(1.75rem, 4vw, 2.75rem); }
 .btn:hover .arrow { transform: translateX(3px); }
 
 /* ---------- hero ---------- */
-.hero { padding-block: clamp(4rem, 10vw, 7.5rem) clamp(2.5rem, 6vw, 4rem); }
+.hero { padding-block: clamp(1.75rem, 4vw, 2.75rem) clamp(2.5rem, 6vw, 4rem); }
 .hero h1 { max-width: 16ch; }
 .hero .lead { margin-top: 1.25rem; }
 .hero .cta-row { margin-top: 2rem; display: flex; gap: .9rem; flex-wrap: wrap; }
