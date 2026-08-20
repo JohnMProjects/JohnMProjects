@@ -16,7 +16,7 @@
   --muted:        #5A5A4E;  /* secondary text       */
   --line:         #DEDACE;  /* hairline borders     */
 
-  --maxw: 1080px;
+  --maxw: 1240px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
 }
 
