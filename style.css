@@ -64,6 +64,7 @@ p  { margin: 0 0 1.1rem; }
 /* ---------- layout helpers ---------- */
 .wrap { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--gutter); }
 .section { padding-block: clamp(3.5rem, 8vw, 6rem); }
+main > .section:first-child { padding-top: clamp(1.75rem, 4vw, 2.75rem); }
 .section--tight { padding-block: clamp(2.5rem, 5vw, 3.5rem); }
 .divider { height: 1px; background: var(--line); border: 0; margin: 0; }
 
@@ -360,7 +361,7 @@ p  { margin: 0 0 1.1rem; }
 .foot-brand .muted { margin-top: .2rem; }
 
 /* ---- tools marquee (About) ---- */
-.tools-band { padding-top: clamp(2rem, 5vw, 3rem); }
+.tools-band { padding-block: clamp(2.5rem, 5vw, 3.5rem); }
 .marquee { overflow: hidden; border-block: 1px solid var(--line); background: var(--card); }
 .marquee-track { display: flex; align-items: center; width: max-content; animation: marquee-scroll 45s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
