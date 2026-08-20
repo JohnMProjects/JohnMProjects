@@ -177,13 +177,13 @@ main > .section:first-child { padding-top: clamp(1.75rem, 4vw, 2.75rem); }
 .impact .stat .cap { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
 
 /* ---------- cards ---------- */
-.grid { display: grid; gap: 1.5rem; }
+.grid { display: grid; gap: clamp(1.75rem, 3vw, 2.5rem); }
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 
 .card {
   background: var(--card); border: 1px solid var(--line);
-  border-radius: 14px; padding: 1.6rem 1.6rem 1.75rem;
+  border-radius: 14px; padding: 2rem 2rem 2.15rem;
   display: flex; flex-direction: column;
   transition: border-color .18s ease, transform .18s ease;
 }
@@ -249,7 +249,8 @@ main > .section:first-child { padding-top: clamp(1.75rem, 4vw, 2.75rem); }
   text-transform: uppercase; color: var(--brass-dark); margin-bottom: 1rem;
 }
 .cs-body { max-width: 78ch; }
-.cs-body h2 { font-size: 1.4rem; margin-top: 1.75rem; }
+.cs-body h2 { font-size: 1.4rem; margin-top: 2.75rem; }
+.cs-body p { margin: 0 0 1.15rem; }
 .card-link {
   margin-top: 1.1rem; font-size: .9rem; font-weight: 500; color: var(--brass-dark);
   display: inline-flex; align-items: center; gap: .4rem;
