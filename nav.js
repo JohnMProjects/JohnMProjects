@@ -29,3 +29,23 @@
     });
   });
 })();
+
+/* Tools spotlight rotator (About aside). Runs only where the element exists,
+   and respects the user's reduced-motion preference. */
+(function () {
+  var el = document.querySelector('.tools-spot .spot-now');
+  if (!el) return;
+  var tools = ["Ahrefs","Semrush","Moz","Google Search Console","Google Analytics",
+               "Mangools","BuzzStream","Instantly","SEOquake"];
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return; // leave the first tool shown, no rotation
+  var i = 0;
+  setInterval(function () {
+    el.style.opacity = 0;
+    setTimeout(function () {
+      i = (i + 1) % tools.length;
+      el.textContent = tools[i];
+      el.style.opacity = 1;
+    }, 400);
+  }, 2200);
+})();
