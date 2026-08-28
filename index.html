@@ -7,169 +7,286 @@
   <title>John Joshua Masajo | Off-Page SEO Specialist</title>
   <meta name="description" content="Off-page SEO specialist in link building and referring-domain growth, with reporting filtered to what survives an audit. No inflated totals, no links I didn't build." />
 
+  <!-- Canonical: prevents /index.html vs / duplication -->
+  <link rel="canonical" href="https://johnmprojects.github.io/JohnMProjects/" />
+
   <meta property="og:title" content="John Joshua Masajo | Off-Page SEO Specialist" />
   <meta property="og:description" content="Link building and referring-domain growth, reported honestly. Every number filtered to what survives an audit." />
   <meta property="og:type" content="website" />
-
-  <meta property="og:url" content="https://johnmprojects.github.io/JohnMProjects/index.html" />
+  <meta property="og:url" content="https://johnmprojects.github.io/JohnMProjects/" />
   <meta property="og:image" content="https://johnmprojects.github.io/JohnMProjects/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="John Masajo, off-page SEO specialist. Off-page SEO you can verify." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://johnmprojects.github.io/JohnMProjects/og-image.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
+  <!-- Enriched Person schema: url + image + sameAs power entity SEO.
+       ACTION: replace the sameAs URLs with your real LinkedIn / X / GitHub. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "John Joshua Masajo",
+    "alternateName": "John Masajo",
     "jobTitle": "Off-Page SEO Specialist",
-    "knowsAbout": ["Link Building", "Off-Page SEO", "Backlink Analysis", "Competitor Gap Analysis", "Digital PR", "Directory Submissions"]
+    "url": "https://johnmprojects.github.io/JohnMProjects/",
+    "image": "https://johnmprojects.github.io/JohnMProjects/og-image.png",
+    "knowsAbout": ["Link Building", "Off-Page SEO", "Backlink Analysis", "Competitor Gap Analysis", "Digital PR", "Directory Submissions", "Referring Domain Growth"],
+    "sameAs": [
+      "https://www.linkedin.com/in/REPLACE-ME",
+      "https://x.com/REPLACE-ME"
+    ]
   }
   </script>
+
 </head>
 <body>
 
   <header class="site-head">
     <div class="wrap nav">
       <a class="brand" href="index.html" aria-label="John Masajo, home">
-        <svg class="brand-mark" width="36" height="36" viewBox="0 0 64 64" role="img" aria-label="John Masajo"><circle cx="32" cy="32" r="30" fill="none" stroke="#1E3A2F" stroke-width="2.2"/><circle cx="32" cy="32" r="25" fill="none" stroke="#A8935F" stroke-width="1.4"/><text x="32" y="41.5" text-anchor="middle" font-family="Lora, Georgia, serif" font-weight="600" font-size="25" fill="#1E3A2F">JM</text></svg><span class="brand-name">John Masajo</span></a>
-      <nav class="nav-links" aria-label="Primary">
+        <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="John Masajo monogram">
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#F5F2EA" stroke-width="2.2"/>
+          <circle cx="32" cy="32" r="25" fill="none" stroke="#C9A874" stroke-width="1.4"/>
+          <text x="32" y="41.5" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-weight="600" font-size="25" fill="#F5F2EA">JM</text>
+        </svg>
+        <span class="brand-name">John Masajo</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
         <a href="about.html">About</a>
-        <div class="dropdown">
-          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="resources-menu">Resources <span class="caret" aria-hidden="true">&#9662;</span></button>
-          <div class="dropdown-menu" id="resources-menu" role="menu" hidden>
-            <a href="blog.html" role="menuitem">Blog</a>
-            <a href="case-studies.html" role="menuitem">Case Studies</a>
-          </div>
-        </div>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <a href="portfolio.html">Work</a>
+        <a href="case-studies.html">Case studies</a>
+        <a href="blog.html">Writing</a>
+        <a class="nav-cta" href="contact.html">Start a project</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- ===== Hero ===== -->
+    <!-- ===================== HERO ===================== -->
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">Off-Page SEO Specialist</p>
-        <h1>Off-page SEO you can verify.</h1>
-        <p class="lead">
-          I build the authority search engines trust: earned editorial links, clean referring-domain growth, defended rankings. And I report it honestly, no inflated totals, no links I didn't build.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn--primary" href="portfolio.html">See the work <span class="arrow">&rarr;</span></a>
-          <a class="btn btn--ghost" href="about.html">About me</a>
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Off-page SEO &middot; Link building</p>
+            <h1>Off-page SEO you can verify.</h1>
+            <p class="lead">
+              I build the authority search engines trust: earned editorial links, clean
+              referring-domain growth, defended rankings. Then I report it honestly, with no
+              inflated totals and no links I didn't build.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn--primary" href="contact.html">Start a project <span class="arrow">&rarr;</span></a>
+              <a class="btn btn--ghost-dark" href="portfolio.html">See the proof</a>
+            </div>
+            <p class="availability"><span class="dot" aria-hidden="true"></span> Available for select engagements</p>
+          </div>
+
+          <!-- SIGNATURE: the Verified Statement -->
+          <aside class="statement" aria-label="Verified results summary">
+            <div class="statement-head">
+              <span>Statement of results</span>
+              <span class="seal">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Verified
+              </span>
+            </div>
+
+            <div class="st-row">
+              <div>
+                <div class="st-figure" data-count="140" data-suffix="+">140+</div>
+                <div class="st-label">Referring domains earned across client engagements</div>
+              </div>
+              <div class="st-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Conservative floor
+              </div>
+            </div>
+
+            <div class="st-row">
+              <div>
+                <div class="st-figure">10&ndash;15</div>
+                <div class="st-label">Editorial links a month, sustained 16 months</div>
+              </div>
+              <div class="st-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Agency engagement
+              </div>
+            </div>
+
+            <div class="st-row">
+              <div>
+                <div class="st-figure">DR 36&ndash;89</div>
+                <div class="st-label">Placement caliber across sampled links</div>
+              </div>
+              <div class="st-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Zero paid
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- ===== Impact strip (real, conservative) ===== -->
-    <section class="wrap">
-      <div class="impact">
-        <div class="stat">
-          <div class="num">140+</div>
-          <div class="cap">Referring domains earned across client engagements, a conservative, verifiable floor</div>
-        </div>
-        <div class="stat">
-          <div class="num">10 to 15</div>
-          <div class="cap">Editorial links a month, sustained over a 16-month agency engagement</div>
-        </div>
-        <div class="stat">
-          <div class="num">DR 36 to 89</div>
-          <div class="cap">Placement caliber across sampled links, zero paid</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== What I do ===== -->
+    <!-- ===================== WHAT I DO ===================== -->
     <section class="section">
       <div class="wrap">
-        <p class="eyebrow">What I focus on</p>
-        <h2>Off-page, done properly.</h2>
-        <div class="grid grid--3" style="margin-top:2rem;">
-          <article class="card">
-            <div class="kicker">Link building</div>
+        <div class="section-head reveal">
+          <p class="eyebrow">What I focus on</p>
+          <h2>Off-page, done properly.</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="num">01</div>
             <h3>Editorial &amp; niche placements</h3>
-            <p>Resource-page outreach, guest posts, and expert-insight contributions that earn contextual
-               links from relevant, real publications. Genuine editorial, not link farms.</p>
+            <p>Resource-page outreach, guest posts, and expert-insight contributions that earn
+               contextual links from relevant, real publications. Genuine editorial, not link farms.</p>
           </article>
-          <article class="card">
-            <div class="kicker">Gap analysis</div>
-            <h3>Aim before you fire</h3>
-            <p>Competitor backlink and keyword gap analysis to find what's already lifting the sites
-               outranking a client, then reverse-engineer it and add more.</p>
+          <article class="card reveal">
+            <div class="num">02</div>
+            <h3>Competitor gap analysis</h3>
+            <p>Backlink and keyword gap analysis to find what's already lifting the sites
+               outranking a client, then reverse-engineer it and add more. Aim before you fire.</p>
           </article>
-          <article class="card">
-            <div class="kicker">Directories &amp; citations</div>
-            <h3>Strategic listings</h3>
-            <p>Prospecting and placing high-value directory and citation listings, vetted to the client's
-               Domain Rating floor and tracked so nothing goes stale.</p>
+          <article class="card reveal">
+            <div class="num">03</div>
+            <h3>Directories &amp; citations</h3>
+            <p>Prospecting and placing high-value directory and citation listings, vetted to the
+               client's Domain Rating floor and tracked so nothing goes stale.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <hr class="divider" />
-
-    <!-- ===== Featured work (real case studies) ===== -->
-    <section class="section">
+    <!-- ===================== SELECTED WORK (proof, surfaced) ===================== -->
+    <section class="section" style="padding-top:0;">
       <div class="wrap">
-        <p class="eyebrow">Selected work</p>
-        <h2>Numbers that survive an audit.</h2>
-        <p class="lead" style="margin-bottom:2rem;">Three engagements, anonymized by sector under NDA. Full breakdowns, method, and honest limits live in each case study.</p>
-        <div class="grid grid--3">
-
-          <article class="card">
-            <div class="kicker">UK Travel Brand &middot; 3 sites</div>
-            <h3>Off-page from near zero</h3>
-            <div class="metrics">
-              <div class="row"><span class="rk">Referring domains</span>
-                <span class="rv"><span class="b">93</span><span class="sm">unique, 3 sites</span></span></div>
-              <div class="row"><span class="rk">Biggest mover</span>
-                <span class="rv"><span class="s">+</span><span class="b">255%</span><span class="sm">traffic</span></span></div>
-            </div>
-            <a class="card-link" href="case-study-uk-travel.html">Read the case study <span class="arrow">&rarr;</span></a>
-          </article>
-
-          <article class="card">
-            <div class="kicker">UK CBD Brand &middot; 2 sites</div>
-            <h3>Defending the money terms</h3>
-            <div class="metrics">
-              <div class="row"><span class="rk">Commercial terms</span>
-                <span class="rv"><span class="b" style="font-size:1.05rem">Top 3</span><span class="sm">held</span></span></div>
-              <div class="row"><span class="rk">Flagship traffic</span>
-                <span class="rv"><span class="s">+</span><span class="b">20%</span></span></div>
-            </div>
-            <a class="card-link" href="case-study-uk-cbd.html">Read the case study <span class="arrow">&rarr;</span></a>
-          </article>
-
-          <article class="card">
-            <div class="kicker">UK Agency &middot; Multi-client</div>
-            <h3>Editorial links at scale</h3>
-            <div class="metrics">
-              <div class="row"><span class="rk">Output</span>
-                <span class="rv"><span class="b" style="font-size:1.05rem">10 to 15</span><span class="sm">links / mo</span></span></div>
-              <div class="row"><span class="rk">Caliber</span>
-                <span class="rv"><span class="b">DR 36 to 89</span><span class="sm">zero paid</span></span></div>
-            </div>
-            <a class="card-link" href="case-study-team-linkbuilding.html">Read the case study <span class="arrow">&rarr;</span></a>
-          </article>
-
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Numbers that survive an audit.</h2>
+          <p class="lead">Three engagements, anonymized by sector under NDA. Full method and honest
+             limits live in each case study.</p>
         </div>
-        <div class="cta-row" style="margin-top:2rem;">
+
+        <div class="work-list">
+          <a class="work-row reveal" href="case-study-uk-travel.html">
+            <div>
+              <div class="work-tag">UK travel brand &middot; 3 sites</div>
+              <div class="work-title">Off-page from near zero <span class="arrow">&rarr;</span></div>
+            </div>
+            <div class="work-metrics">
+              <div class="wm"><div class="v">93</div><div class="k">Ref. domains</div></div>
+              <div class="wm"><div class="v"><span class="plus">+</span>255%</div><div class="k">Top mover</div></div>
+            </div>
+          </a>
+
+          <a class="work-row reveal" href="case-study-uk-cbd.html">
+            <div>
+              <div class="work-tag">UK CBD brand &middot; 2 sites</div>
+              <div class="work-title">Defending the money terms <span class="arrow">&rarr;</span></div>
+            </div>
+            <div class="work-metrics">
+              <div class="wm"><div class="v">Top&nbsp;3</div><div class="k">Terms held</div></div>
+              <div class="wm"><div class="v"><span class="plus">+</span>20%</div><div class="k">Flagship traffic</div></div>
+            </div>
+          </a>
+
+          <a class="work-row reveal" href="case-study-team-linkbuilding.html">
+            <div>
+              <div class="work-tag">UK agency &middot; Multi-client</div>
+              <div class="work-title">Editorial links at scale <span class="arrow">&rarr;</span></div>
+            </div>
+            <div class="work-metrics">
+              <div class="wm"><div class="v">10&ndash;15</div><div class="k">Links / mo</div></div>
+              <div class="wm"><div class="v">36&ndash;89</div><div class="k">DR caliber</div></div>
+            </div>
+          </a>
+        </div>
+
+        <div style="margin-top:2.4rem;">
           <a class="btn btn--ghost" href="portfolio.html">View full portfolio <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HONESTY METHOD (real trust, no fabricated proof) ===================== -->
+    <section class="section method">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" style="color:var(--gold-soft)">How I report</p>
+          <h2>Every figure is filtered before you see it.</h2>
+          <p class="lead">The reason the numbers above are smaller than what most agencies quote is
+             that they are what is left after the filtering. Here is what that means.</p>
+        </div>
+        <div class="method-grid">
+          <div class="method-item reveal">
+            <span class="mi-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>Windowed to the engagement</h3>
+            <p>Only links earned inside the dates I actually worked count. Nothing before, nothing after.</p>
+          </div>
+          <div class="method-item reveal">
+            <span class="mi-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>Deduped and cleaned</h3>
+            <p>Sister-site cross-links and auto-generated links are stripped out. One domain, counted once.</p>
+          </div>
+          <div class="method-item reveal">
+            <span class="mi-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>Vetted to a DR floor</h3>
+            <p>Every placement is measured against the client's required Domain Rating before it counts.</p>
+          </div>
+          <div class="method-item reveal">
+            <span class="mi-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>Shortfalls called out</h3>
+            <p>Where a lane did not win, the case study says so. I would rather show a smaller number I can prove.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ============================================================
+      RECOMMENDED NEXT ADD — client proof (kept out of the live
+      page until you have a real quote, to stay consistent with
+      your honesty positioning). Drop a real, even anonymized,
+      testimonial in here and uncomment. Example structure:
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head"><p class="eyebrow">In their words</p>
+          <h2>What clients keep me for.</h2></div>
+          <blockquote> ... real quote ... </blockquote>
+          <cite>UK SEO consultant, travel sector (NDA)</cite>
+        </div>
+      </section>
+      ============================================================
+    -->
+
+    <!-- ===================== CLOSING CTA ===================== -->
+    <section class="section closing">
+      <div class="wrap">
+        <h2 class="reveal">Let's build authority that holds up.</h2>
+        <p class="reveal">A site that needs authority, a backlink profile that needs a second opinion,
+           or a campaign you want run properly and reported honestly. Tell me what you're working on.</p>
+        <div class="reveal">
+          <a class="btn btn--primary" href="contact.html">Start a project <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -177,20 +294,37 @@
 
   <footer class="site-foot">
     <div class="wrap">
-      <div class="foot-brand">
-        <a href="index.html" aria-label="John Masajo, home" class="foot-logo"><svg width="72" height="72" viewBox="0 0 64 64" role="img" aria-label="John Masajo"><circle cx="32" cy="32" r="30" fill="none" stroke="#F3F0E9" stroke-width="2.2"/><circle cx="32" cy="32" r="25" fill="none" stroke="#A8935F" stroke-width="1.4"/><text x="32" y="41.5" text-anchor="middle" font-family="Lora, Georgia, serif" font-weight="600" font-size="25" fill="#F3F0E9">JM</text></svg></a>
-        <div>
-          <h2>Let's build authority that holds up.</h2>
+      <div class="foot-top">
+        <div class="foot-brand">
+          <svg width="40" height="40" viewBox="0 0 64 64" role="img" aria-label="John Masajo monogram">
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#F5F2EA" stroke-width="2.2"/>
+            <circle cx="32" cy="32" r="25" fill="none" stroke="#C9A874" stroke-width="1.4"/>
+            <text x="32" y="41.5" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-weight="600" font-size="25" fill="#F5F2EA">JM</text>
+          </svg>
+          John Masajo
+        </div>
+        <div class="foot-cols">
+          <div class="foot-col">
+            <h4>Site</h4>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Work</a>
+            <a href="case-studies.html">Case studies</a>
+            <a href="blog.html">Writing</a>
+          </div>
+          <div class="foot-col">
+            <h4>Connect</h4>
+            <a href="contact.html">Start a project</a>
+            <!-- ACTION: add your real profiles -->
+            <a href="https://www.linkedin.com/in/REPLACE-ME" rel="me">LinkedIn</a>
+            <a href="mailto:REPLACE-ME@example.com">Email</a>
+          </div>
         </div>
       </div>
-      <div class="foot-links">
-        <a href="about.html">About</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+      <div class="foot-copy">
+        <span>&copy; 2026 John Joshua Masajo</span>
+        <span>Off-page SEO you can verify.</span>
       </div>
     </div>
-      <div class="wrap foot-copy">&copy; 2026 John Masajo</div>
   </footer>
 
   <script src="nav.js"></script>
