@@ -113,10 +113,11 @@ main > .section:first-child { padding-top: clamp(2.5rem, 5vw, 3.75rem); }
 }
 .nav-links a:hover { text-decoration: none; border-color: var(--gold-soft); }
 .nav-links a[aria-current="page"] { border-color: var(--gold-soft); }
-.nav-cta {
+.nav-links a.nav-cta {
+  display: inline-flex; align-items: center; line-height: 1;
   font-family: var(--ff-body); font-size: .88rem; font-weight: 600;
   color: var(--forest) !important; background: var(--gold-soft);
-  padding: .55rem 1.1rem; border-radius: 999px; border-bottom: 0 !important;
+  padding: .62rem 1.15rem; border-radius: 999px; border-bottom: 0 !important;
   transition: background .18s ease, transform .18s ease;
 }
 .nav-cta:hover { background: #d8bd90; transform: translateY(-1px); }
@@ -335,6 +336,14 @@ main > .section:first-child { padding-top: clamp(2.5rem, 5vw, 3.75rem); }
 .cs-body { max-width: 74ch; }
 .cs-body h2 { font-size: 1.5rem; margin-top: 2.75rem; }
 .cs-body p { margin: 0 0 1.15rem; }
+/* article images: drop an <img> or a <figure><img><figcaption> inside .cs-body */
+.cs-body img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--paper-line); display: block; }
+.cs-body figure { margin: 2.25rem 0; }
+.cs-body figure img { margin: 0; }
+.cs-body figcaption { font-family: var(--ff-mono); font-size: .74rem; letter-spacing: .02em; color: var(--muted); margin-top: .65rem; }
+/* optional wide lead image at the top of an article */
+.article-hero { margin: 1.75rem 0 0; }
+.article-hero img { width: 100%; height: auto; max-height: 420px; object-fit: cover; border-radius: 16px; border: 1px solid var(--paper-line); }
 
 /* case-study / blog list rows */
 .post { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: start; padding-block: 1.9rem; border-bottom: 1px solid var(--paper-line); }
@@ -415,8 +424,11 @@ main > .section:first-child { padding-top: clamp(2.5rem, 5vw, 3.75rem); }
 .site-foot a { color: var(--mist); }
 .site-foot a:hover { color: var(--paper); text-decoration: none; }
 .foot-top { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; align-items: flex-start; }
-.foot-brand { display: flex; align-items: center; gap: .8rem; color: var(--paper); font-family: var(--ff-display); font-size: 1.1rem; }
+.foot-brand { display: flex; align-items: center; gap: .85rem; color: var(--paper); }
 .foot-brand svg { flex-shrink: 0; }
+.foot-brand-text { display: flex; flex-direction: column; gap: .18rem; }
+.foot-name { font-family: var(--ff-display); font-weight: 600; font-size: 1.1rem; color: var(--paper); line-height: 1.1; }
+.foot-tagline { font-family: var(--ff-mono); font-size: .72rem; letter-spacing: .04em; color: var(--mist); }
 .foot-cols { display: flex; gap: clamp(2rem, 6vw, 5rem); flex-wrap: wrap; }
 .foot-col h4 { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-soft); margin: 0 0 .9rem; font-weight: 500; }
 .foot-col a { display: block; font-size: .92rem; padding-block: .28rem; }
@@ -427,10 +439,23 @@ main > .section:first-child { padding-top: clamp(2.5rem, 5vw, 3.75rem); }
 }
 
 /* =========================================================
-   REVEAL ON SCROLL (no-JS safe: visible unless .js hides it)
+   MOTION
+   Scroll-reveal was removed: content is always visible (no
+   hide-by-default), and the logo intro below is the single
+   shared motion across every page. The .reveal class is left
+   as a harmless no-op so existing markup needs no changes.
    ========================================================= */
-.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
-.js .reveal.in { opacity: 1; transform: none; }
+.brand-mark { transform-origin: center; }
+@media (prefers-reduced-motion: no-preference) {
+  .brand-mark { animation: mark-in .8s cubic-bezier(.2,.7,.2,1) both; }
+  .brand-mark circle:nth-of-type(1) { stroke-dasharray: 189; animation: ring-draw1 .8s ease both; }
+  .brand-mark circle:nth-of-type(2) { stroke-dasharray: 158; animation: ring-draw2 .8s ease .12s both; }
+  .brand .brand-name { display: inline-block; white-space: nowrap; animation: name-write .55s ease .55s both; }
+  @keyframes mark-in { from { transform: rotate(-90deg); } to { transform: rotate(0); } }
+  @keyframes ring-draw1 { from { stroke-dashoffset: 189; } to { stroke-dashoffset: 0; } }
+  @keyframes ring-draw2 { from { stroke-dashoffset: 158; } to { stroke-dashoffset: 0; } }
+  @keyframes name-write { from { clip-path: inset(0 101% 0 0); } to { clip-path: inset(0 0 0 0); } }
+}
 
 /* =========================================================
    RESPONSIVE
@@ -460,7 +485,7 @@ main > .section:first-child { padding-top: clamp(2.5rem, 5vw, 3.75rem); }
   .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
   .nav-links a { padding: .8rem 0; border-bottom: 1px solid var(--mist-line); }
   .nav-links a:last-child { border-bottom: 0; }
-  .nav-cta { text-align: center; margin-top: .8rem; padding: .8rem 1.1rem; }
+  .nav-links a.nav-cta { justify-content: center; text-align: center; margin-top: .8rem; padding: .85rem 1.1rem; }
   .nav-toggle { display: block; }
   .work-metrics { flex-wrap: wrap; gap: 1.25rem 2rem; }
   h1 { font-size: clamp(2rem, 8.5vw, 2.8rem); }
@@ -475,5 +500,4 @@ main > .section:first-child { padding-top: clamp(2.5rem, 5vw, 3.75rem); }
 .site-head :focus-visible, .site-foot :focus-visible { outline-color: var(--gold-soft); }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  .js .reveal { opacity: 1; transform: none; }
 }
