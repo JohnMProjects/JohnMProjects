@@ -64,8 +64,8 @@ document.documentElement.classList.add('js');
 (function () {
   var el = document.querySelector('.tools-spot .spot-now');
   if (!el) return;
-  var tools = ["Ahrefs","Semrush","Moz","Google Search Console","Google Analytics",
-               "Mangools","BuzzStream","Instantly","SEOquake"];
+  var tools = ["Ahrefs","Semrush","Screaming Frog","Google Search Console","Google Analytics",
+               "Microsoft Clarity","PageSpeed Insights","Moz","Mangools","BuzzStream","Instantly","SEOquake"];
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce) return;
   var i = 0;
